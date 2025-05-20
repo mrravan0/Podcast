@@ -1,0 +1,9 @@
+@use '../../../Sass-Scss/' as *;
+
+.header {
+
+    &__list,
+    &__content {
+        @include fluid-text(calculate(16), 16);
+    }
+}
