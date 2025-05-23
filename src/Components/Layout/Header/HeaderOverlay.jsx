@@ -1,11 +1,12 @@
 import { Fragment } from "react";
 import DownIcon from "../../../Svg/Layout/DownIcon";
 import UseMediaQuery from "../../../CustomHooks/UseMediaQuery";
+import Button from "../Button/Button";
 const HeaderOverlay = ({ features }) => {
   const isSmallScreen = UseMediaQuery("(max-width:750.9px)");
   return (
     <div
-      className={`${features.statusOpen ? "flex" : "hidden"} bg-custom-cream min-mobile:contents absolute bottom-0 left-0 z-50 h-full w-full flex-col gap-y-10 p-4 justify-center`}
+      className={`${features.statusOpen ? "flex" : "hidden"} bg-custom-cream min-mobile:contents absolute bottom-0 left-0 z-50 h-full w-full flex-col justify-center gap-y-10 p-4`}
     >
       <nav>
         <ul className="header__list max-laptop:gap-x-15 max-tablet:gap-x-10 max-mobile:flex-col max-mobile:gap-y-10 flex items-center gap-x-20">
@@ -42,9 +43,7 @@ const HeaderOverlay = ({ features }) => {
         <button className="max-mobile:w-full cursor-pointer rounded-lg border-2 border-solid border-black px-6 py-3 duration-300 hover:scale-110">
           RECENT EPISODES
         </button>
-        <button className="shadow-custom max-mobile:w-full cursor-pointer rounded-lg border-2 border-solid border-black bg-black px-6 py-3 text-white duration-300 hover:scale-110">
-          SUBSCRIBE
-        </button>
+        <Button text={"Subscribe"} className={"px-6 py-3"} />
       </div>
     </div>
   );

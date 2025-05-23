@@ -16,8 +16,7 @@
 
 @layer base {
     body {
-        font-family: var(--font-primary);
-        font-weight: 700;
+        @apply bg-custom-cream font-bold font-primary;
     }
 }
 

@@ -1,7 +1,12 @@
-import Header from "../Components/Layout/Header/Header"
+import { Fragment } from "react";
+import Header from "../Components/Layout/Header/Header";
+import Hero from "../Components/Home-Page/Hero/Hero";
 function App() {
   return (
-    <Header />
-  )
+    <Fragment>
+      <Header />
+      <Hero />
+    </Fragment>
+  );
 }
-export default App
+export default App;
