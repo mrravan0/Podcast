@@ -1,14 +1,21 @@
 @use "../../../Sass-Scss/" as *;
 .hero {
-  background-position:
-    right rem(60) center,
-    center left;
-  &__title {
-    @include fluid-text(calculate(96), 96);
+  &__top {
+    background-position:
+      right rem(60) center,
+      center left;
+    &-title {
+      @include fluid-text(calculate(96), 56);
+    }
+    &-subtitle {
+      color: #4d4d4d;
+      @include fluid-text(calculate(16), 14);
+    }
   }
 
-  &__subtitle {
-    color: #4d4d4d;
-    @include fluid-text(calculate(16), 14);
+  &__bottom {
+    &-title {
+      @include fluid-text(calculate(22), 22);
+    }
   }
 }

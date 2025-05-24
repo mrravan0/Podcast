@@ -1,12 +1,12 @@
-import { Fragment } from "react";
 import Header from "../Components/Layout/Header/Header";
-import Hero from "../Components/Home-Page/Hero/Hero";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "../Pages/HomePage";
 function App() {
   return (
-    <Fragment>
+    <Routes>
       <Header />
-      <Hero />
-    </Fragment>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
   );
 }
 export default App;
