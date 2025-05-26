@@ -6,27 +6,12 @@ import GlobeSection from "../../Layout/GlobeSection/GlobeSection";
 import "swiper/css";
 import "swiper/css/bundle";
 import "./Hero.scss";
-const Hero = () => {
+const Hero = ({ data }) => {
   const imageContent = [];
   for (let i = 1; i <= 6; i++) imageContent.push(`/Hero/photo${i}.png`);
-  const HeroData = [
-    { title: "Supported by:" },
-    {
-      title: "Spotify",
-      svg: <SpotifyIcon features={{ color: "#1ed760", size: "35" }} />,
-    },
-    {
-      title: "Google Podcast",
-      image: "/Hero/GoogleIcon.png",
-    },
-    {
-      title: "Google Podcast",
-      image: "/Hero/YoutubeIcon.png",
-    },
-  ];
   return (
     <GlobeSection properties={"hero pt-16 pb-36"} svgColor={"#CD4631"}>
-      <div className="hero__top min-mobile:bg-[url(/HeroRight.png),url(/HeroLeft.png)] min-mobile:bg-no-repeat">
+      <div className="hero__top min-mobile:bg-[url(/Hero/HeroRight.png),url(/Hero/HeroLeft.png)] min-mobile:bg-no-repeat">
         <div className="container-custom flex flex-col items-center gap-y-10 pb-32 text-center">
           <h1 className="hero__top-title leading-none font-bold">
             Your Daily <br />
@@ -65,7 +50,7 @@ const Hero = () => {
         </div>
         <div className="container-custom">
           <ul className="hero__bottom-title max-tablet:grid max-tablet:grid-cols-2 max-tablet:gap-8 flex items-center justify-between border-y-2 border-solid border-[#4d4d4d] py-11 font-bold">
-            {HeroData?.map((item, index) => (
+            {data?.map((item, index) => (
               <li
                 key={index}
                 className="max-tablet:justify-center flex items-center gap-x-2.5"

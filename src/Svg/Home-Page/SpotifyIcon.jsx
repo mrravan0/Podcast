@@ -4,7 +4,6 @@ const SpotifyIcon = ({ features }) => {
       width={features.size}
       height={features.size}
       viewBox="0 0 35 34"
-      fill={features.color}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

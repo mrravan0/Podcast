@@ -1,12 +1,15 @@
 import Header from "../Components/Layout/Header/Header";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "../Pages/HomePage";
+import { Fragment } from "react/jsx-runtime";
 function App() {
   return (
-    <Routes>
+    <Fragment>
       <Header />
-      <Route path="/" element={<HomePage />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Fragment>
   );
 }
 export default App;

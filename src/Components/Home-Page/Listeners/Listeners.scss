@@ -1,0 +1,13 @@
+@use "../../../Sass-Scss/" as *;
+
+.listeners {
+  &__title {
+    @include fluid-text(calculate(60), 28);
+  }
+  .customers__description,
+  &__subtitle {
+    @include fluid-text(calculate(22), 20);
+    font-weight: 500;
+    line-height: 1.6;
+  }
+}

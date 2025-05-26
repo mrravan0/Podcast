@@ -1,0 +1,10 @@
+@use "../../../Sass-Scss/" as *;
+
+.listen {
+  &__title {
+    @include fluid-text(calculate(60), 40);
+  }
+  &__subtitle {
+    @include fluid-text(calculate(16), 16);
+  }
+}
