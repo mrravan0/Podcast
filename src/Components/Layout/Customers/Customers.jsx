@@ -13,11 +13,11 @@ const Customers = ({ data }) => {
         </div>
         <div className="max-tablet:flex-col flex items-center gap-2.5">
           <div className="flex items-center gap-x-2.5">
-            <img src={data.image} className="rounded-full" alt="" />
+            <img src={data?.image} className="rounded-full" alt="" />
             <p className="font-medium">John Smith,</p>
           </div>
           <div className="flex items-center gap-x-2.5">
-            {data.svg}
+            {data?.svg}
             <p>Social Community Manager</p>
           </div>
         </div>

@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import DownIcon from "../../../Svg/Layout/DownIcon";
 import UseMediaQuery from "../../../CustomHooks/UseMediaQuery";
-import Button from "../Button/Button";
 const HeaderOverlay = ({ features }) => {
   const isSmallScreen = UseMediaQuery("(max-width:750.9px)");
   return (
@@ -43,7 +42,7 @@ const HeaderOverlay = ({ features }) => {
         <button className="max-mobile:w-full cursor-pointer rounded-lg border-2 border-solid border-black px-6 py-3 duration-300 hover:scale-110">
           RECENT EPISODES
         </button>
-        <Button text={"Subscribe"} className={"px-6 py-3"} />
+        <button className="btn px-6 py-3">Subscribe</button>
       </div>
     </div>
   );

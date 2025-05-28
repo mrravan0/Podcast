@@ -1,26 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 
 @theme {
-    --font-primary: 'Montserrat Alternates', sans-serif;
-    --breakpoint-laptop: 1440.9px;
-    --breakpoint-tablet: 1000.9px;
-    --breakpoint-mobile: 750.9px;
-    --breakpoint-mobile-s: 550.9px;
-    --color-custom-cream: #F7EDE8;
-    --color-custom-grey: #4D4D4D;
-    --color-custom-darkBlue: #81ADC8;
-    --color-custom-lightBlue: #EDF3F7;
-    --color-custom-red: #CD4631;
-    --shadow-custom: 5px 4px 0 0 rgba(0, 0, 0, 0.25)
+  --font-primary: "Montserrat Alternates", sans-serif;
+  --breakpoint-laptop: 1440.9px;
+  --breakpoint-tablet: 1000.9px;
+  --breakpoint-mobile: 750.9px;
+  --breakpoint-mobile-s: 550.9px;
+  --color-custom-cream: #f7ede8;
+  --color-custom-grey: #4d4d4d;
+  --color-custom-darkBlue: #81adc8;
+  --color-custom-lightBlue: #edf3f7;
+  --color-custom-red: #cd4631;
+  --shadow-custom: 5px 4px 0 0 rgba(0, 0, 0, 0.25);
 }
 
 @layer base {
-    body {
-        @apply bg-custom-cream font-bold font-primary;
-    }
+  body {
+    @apply bg-custom-cream font-primary text-[clamp(16px,1.09375vw,21px)] font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply shadow-custom w-max cursor-pointer rounded-lg border-solid border-black bg-black text-[clamp(14px,1.09375vw,21px)] text-white duration-300 hover:scale-110;
+  }
 }
 
 .container-custom {
-    @apply max-w-397.5 w-full mx-auto px-5 max-laptop:max-w-300;
+  @apply max-laptop:max-w-300 mx-auto w-full max-w-397.5 px-5;
 }

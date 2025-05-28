@@ -1,7 +1,8 @@
-import Header from "../Components/Layout/Header/Header";
+import Header from "../../Components/Layout/Header/Header";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "../Pages/HomePage";
+import HomePage from "../../Pages/HomePage/HomePage";
 import { Fragment } from "react/jsx-runtime";
+import './App.scss';
 function App() {
   return (
     <Fragment>

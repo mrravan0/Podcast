@@ -1,8 +1,6 @@
-import Button from "../../Layout/Button/Button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import SpotifyIcon from "../../../Svg/Home-Page/SpotifyIcon";
-import GlobeSection from "../../Layout/GlobeSection/GlobeSection";
+import RopeIcon from "../../../Svg/Layout/RopeIcon";
 import "swiper/css";
 import "swiper/css/bundle";
 import "./Hero.scss";
@@ -10,7 +8,7 @@ const Hero = ({ data }) => {
   const imageContent = [];
   for (let i = 1; i <= 6; i++) imageContent.push(`/Hero/photo${i}.png`);
   return (
-    <GlobeSection properties={"hero pt-16 pb-36"} svgColor={"#CD4631"}>
+    <section className={"hero relative pt-16 pb-36"}>
       <div className="hero__top min-mobile:bg-[url(/Hero/HeroRight.png),url(/Hero/HeroLeft.png)] min-mobile:bg-no-repeat">
         <div className="container-custom flex flex-col items-center gap-y-10 pb-32 text-center">
           <h1 className="hero__top-title leading-none font-bold">
@@ -20,7 +18,7 @@ const Hero = ({ data }) => {
           <p className="hero__top-subtitle font-medium">
             We cover all kinds of categories and <br /> a weekly special guest.
           </p>
-          <Button text={"Subscribe"} className={"px-12 py-6"} />
+          <button className="btn px-12 py-6">Subscribe</button>
         </div>
       </div>
       <div className="hero__bottom max-mobile-s:gap-y-20 flex flex-col gap-y-30">
@@ -62,7 +60,8 @@ const Hero = ({ data }) => {
           </ul>
         </div>
       </div>
-    </GlobeSection>
+      <RopeIcon color={"#CD4631"} />
+    </section>
   );
 };
 

@@ -2,7 +2,7 @@
 .hero {
   &__top {
     background-position:
-      right rem(60) center,
+      right 60px center,
       center left;
     &-title {
       @include fluid-text(calculate(96), 56);

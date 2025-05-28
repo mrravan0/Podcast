@@ -1,0 +1,7 @@
+@use "../../Sass-Scss/" as *;
+.title {
+  @include fluid-text(calculate(60), 35);
+}
+.subtitle {
+  @include fluid-text(calculate(22), 20);
+}

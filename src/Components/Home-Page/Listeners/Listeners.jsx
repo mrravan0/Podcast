@@ -1,14 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import GlobeSection from "../../Layout/GlobeSection/GlobeSection";
-import SpotifyIcon from "../../../Svg/Home-Page/SpotifyIcon";
 import Customers from "../../Layout/Customers/Customers";
 import LeftIcon from "../../../Svg/Layout/LeftIcon";
 import RightIcon from "../../../Svg/Layout/RightIcon";
-import Vector3 from "../../../Svg/Layout/Vector3";
+import {Vector3} from "../../../Svg/Layout/Vectors";
+import RopeIcon from "../../../Svg/Layout/RopeIcon";
 import { useRef, useState, useEffect } from "react";
 import "./Listeners.scss";
-const Listeners = ({data}) => {
+const Listeners = ({ data }) => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -25,17 +24,14 @@ const Listeners = ({data}) => {
     }
   }, [swiperInstance]);
   return (
-    <GlobeSection
-      properties={"pt-35 pb-25 bg-custom-lightBlue"}
-      svgColor={"black"}
-    >
-      <div className="listeners container-custom flex flex-col gap-y-15">
+    <section className="listeners bg-custom-lightBlue relative pt-35 pb-25">
+      <div className="container-custom flex flex-col gap-y-15">
         <div className="mb-10 flex flex-col items-center gap-y-5">
-          <h1 className="listeners__title relative">
+          <h1 className="title relative">
             What our listeners say
             <Vector3 features={{ properties: "absolute -top-11 -left-20" }} />
           </h1>
-          <p className="listeners__subtitle text-custom-grey font-medium">
+          <p className="subtitle text-custom-grey font-medium">
             Their experience throughout every platform
           </p>
         </div>
@@ -75,7 +71,8 @@ const Listeners = ({data}) => {
           </div>
         </div>
       </div>
-    </GlobeSection>
+      <RopeIcon color={"black"} />
+    </section>
   );
 };
 
