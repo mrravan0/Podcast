@@ -120,3 +120,56 @@ export const MembershipData = [
     svg: <Vector5 />,
   },
 ];
+export const RecentData = [
+  {
+    title: "Pandemic Becoming Endemic",
+    episode: "Eps. 6",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
+    info: ["covid-19", "health"],
+    status:true,
+    img: "/Hero/photo1.png",
+  },
+  {
+    title: "How to Deal with Self–Confidence",
+    episode: "Eps. 5",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
+    info: ["self-esteem", "health"],
+    img: "/Hero/photo2.png",
+  },
+  {
+    title: "Are you a Perplexed Mind Person?",
+    episode: "Eps. 4",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
+    info: ["mind-behaviour", "health"],
+    img: "/Hero/photo3.png",
+  },
+  {
+    title: "Type of Social Classes of People",
+    episode: "Eps. 3",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
+    info: ["social class", "wealth"],
+    status:true,
+    img: "/Hero/photo4.png",
+  },
+  {
+    title: "Women's Rights? Is it alright?",
+    episode: "Eps. 2",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
+    info: ["women’s rights"],
+    status:true,
+    img: "/Hero/photo5.png",
+  },
+  {
+    title: "Tesla Autopilot Controversy",
+    episode: "Eps. 1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
+    info: ["automation", "tech"],
+    img: "/Hero/photo6.png",
+  },
+];
