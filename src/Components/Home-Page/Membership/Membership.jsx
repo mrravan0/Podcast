@@ -13,7 +13,7 @@ const Membership = ({ data }) => {
               }}
             />
           </h1>
-          <p className="subtitle text-custom-grey">
+          <p className="subtitle">
             Become our sponsor and get all benefits
           </p>
         </div>

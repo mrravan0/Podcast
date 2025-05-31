@@ -1,7 +1,7 @@
 @use "../../../Sass-Scss/" as *;
 
 .listeners {
-  .customers__description {
+  .info {
     @include fluid-text(calculate(22), 20);
     font-weight: 500;
     line-height: 1.6;

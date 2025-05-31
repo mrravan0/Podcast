@@ -1,4 +1,3 @@
-import "./Customers.scss";
 const Customers = ({ data }) => {
   return (
     <div className="customers flex flex-col">
@@ -6,7 +5,7 @@ const Customers = ({ data }) => {
       <div className="flex flex-col items-center gap-y-10">
         <div className="">
           {data.titleLine?.map((item, index) => (
-            <h3 className="customers__description" key={index}>
+            <h3 className="info" key={index}>
               {item}
             </h3>
           ))}

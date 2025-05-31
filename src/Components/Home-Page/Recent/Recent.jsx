@@ -1,6 +1,5 @@
 import RopeIcon from "../../../Svg/Layout/RopeIcon";
 import EpisodesCard from "../../Layout/EpisodesCard/EpisodesCard";
-import { Vector6 } from "../../../Svg/Layout/Vectors";
 const Recent = ({ data }) => {
   return (
     <section className="relative py-35">
@@ -13,7 +12,6 @@ const Recent = ({ data }) => {
           {data?.map((item, index) => (
             <EpisodesCard data={item} key={index} />
           ))}
-          <Vector6 properties={"absolute right-0 -top-[20%] w-[9%] max-mobile:hidden"} />
         </div>
         <button className="btn px-9 py-5">BROWSE ALL EPISODES</button>
       </div>

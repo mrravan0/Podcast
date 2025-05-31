@@ -31,7 +31,7 @@ const Listeners = ({ data }) => {
             What our listeners say
             <Vector3 features={{ properties: "absolute -top-11 -left-20" }} />
           </h1>
-          <p className="subtitle text-custom-grey font-medium">
+          <p className="subtitle">
             Their experience throughout every platform
           </p>
         </div>

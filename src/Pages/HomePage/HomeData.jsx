@@ -31,7 +31,12 @@ export const ListenersData = [
       "Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua.",
     ],
     image: "/Listeners/photo2.png",
-    svg: <img src="/Hero/GoogleIcon.png" alt="" />,
+    svg: (
+      <img
+        src="/Hero/GoogleIcon.png"
+        alt=""
+      />
+    ),
   },
   {
     titleLine: [
@@ -52,7 +57,12 @@ export const ListenersData = [
       "Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua.",
     ],
     image: "/Listeners/photo2.png",
-    svg: <img src="/Hero/GoogleIcon.png" alt="" />,
+    svg: (
+      <img
+        src="/Hero/GoogleIcon.png"
+        alt=""
+      />
+    ),
   },
   {
     titleLine: [
@@ -127,7 +137,7 @@ export const RecentData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
     info: ["covid-19", "health"],
-    status:true,
+    status: true,
     img: "/Hero/photo1.png",
   },
   {
@@ -152,7 +162,7 @@ export const RecentData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
     info: ["social class", "wealth"],
-    status:true,
+    status: true,
     img: "/Hero/photo4.png",
   },
   {
@@ -161,7 +171,7 @@ export const RecentData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. ",
     info: ["women’s rights"],
-    status:true,
+    status: true,
     img: "/Hero/photo5.png",
   },
   {
@@ -173,3 +183,57 @@ export const RecentData = [
     img: "/Hero/photo6.png",
   },
 ];
+export const SponsorData = {
+  SponsorTop: [
+    {
+      title: "Member",
+      description:
+        "Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.",
+      price: "9.99",
+    },
+    {
+      title: "Family",
+      description:
+        "Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.",
+      price: "14.99",
+      status: true,
+    },
+    {
+      title: "Official",
+      description:
+        "Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.",
+      price: "29.99",
+    },
+  ],
+  SponsorBottom: [
+    {
+      title: "What’s included:",
+      description: [
+        "Exclusive Content",
+        "5% Discount on Merch",
+        "Join the Community",
+        "Livestreaming Access",
+      ],
+    },
+    {
+      title: "What’s included:",
+      description: [
+        "Everything in Tier 1",
+        "Free tickets to Events",
+        "Limited Edition Merch",
+        "Promote your Product",
+        "Request Topic",
+      ],
+      status: true,
+    },
+    {
+      title: "What’s included:",
+      description: [
+        "Everything in Tier 2",
+        "Exclusive Badge on Livestreaming",
+        "Become an Official Sponsor",
+        "Early Access to All Episodes",
+      ],
+    },
+  ],
+};

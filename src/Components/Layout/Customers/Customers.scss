@@ -1,7 +1,0 @@
-@use "../../../Sass-Scss/" as *;
-
-.customers {
-  &__description {
-    @include fluid-text(calculate(36), 28);
-  }
-}
