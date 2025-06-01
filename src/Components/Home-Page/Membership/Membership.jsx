@@ -7,19 +7,19 @@ const Membership = ({ data }) => {
           <h1 className="title">
             Membership benefits
             <Vector4
-              features={{
-                properties:
-                  "absolute -top-[35%] -right-[7%] w-1/4 max-mobile-s:hidden",
-              }}
+              properties={
+                "absolute -top-[35%] -right-[7%] w-1/4 max-mobile-s:hidden"
+              }
             />
           </h1>
-          <p className="subtitle">
-            Become our sponsor and get all benefits
-          </p>
+          <p className="subtitle">Become our sponsor and get all benefits</p>
         </div>
         <div className="max-mobile:grid-cols-2 max-mobile-s:grid-cols-1 grid grid-cols-3 gap-x-6 gap-y-20">
           {data?.map((item, index) => (
-            <div className="flex flex-col items-center gap-y-7.5" key={index}>
+            <div
+              className="flex flex-col items-center gap-y-7.5"
+              key={index}
+            >
               <div className="flex size-20 items-center justify-center">
                 {item.svg}
               </div>

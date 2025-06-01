@@ -1,6 +1,5 @@
 import Customers from "../../Layout/Customers/Customers";
-import Vector1 from "../../../Svg/Home-Page/Vector1";
-import Vector2 from "../../../Svg/Home-Page/Vector2";
+import { Vector1,Vector2 } from "../../../Svg/Layout/Vectors";
 import RopeIcon from "../../../Svg/Layout/RopeIcon";
 const Listen = ({ info, data }) => {
   return (

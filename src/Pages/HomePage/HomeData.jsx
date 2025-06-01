@@ -1,8 +1,9 @@
-import SpotifyIcon from "../../Svg/Home-Page/SpotifyIcon";
+import SpotifyIcon from "../../Svg/Layout/SpotifyIcon";
 import WaveIcon from "../../Svg/Layout/WaveIcon";
 import StarGroupIcon from "../../Svg/Layout/StarGroupIcon";
 import SmileIcon from "../../Svg/Layout/SmileIcon";
 import { Vector5 } from "../../Svg/Layout/Vectors";
+
 export const HeroData = [
   { title: "Supported by:" },
   {
@@ -18,6 +19,7 @@ export const HeroData = [
     image: "/Hero/YoutubeIcon.png",
   },
 ];
+
 export const ListenersData = [
   {
     titleLine: [
@@ -72,6 +74,7 @@ export const ListenersData = [
     svg: <SpotifyIcon features={{ size: "20" }} />,
   },
 ];
+
 export const ListenInfo = [
   {
     image: "/Listen/photo1.png",
@@ -84,6 +87,7 @@ export const ListenInfo = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio",
   },
 ];
+
 export const ListenData = {
   titleLine: [
     "One of the best daily podcasts that",
@@ -92,6 +96,7 @@ export const ListenData = {
   image: "/Listen/photo3.png",
   svg: <SpotifyIcon features={{ size: "16" }} />,
 };
+
 export const MembershipData = [
   {
     title: "Topic by Request",
@@ -127,9 +132,10 @@ export const MembershipData = [
     title: "And much more!",
     description:
       "Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.",
-    svg: <Vector5 />,
+    svg: <Vector5 properties={"w-16.75"} />,
   },
 ];
+
 export const RecentData = [
   {
     title: "Pandemic Becoming Endemic",
@@ -183,6 +189,7 @@ export const RecentData = [
     img: "/Hero/photo6.png",
   },
 ];
+
 export const SponsorData = {
   SponsorTop: [
     {
@@ -237,3 +244,25 @@ export const SponsorData = {
     },
   ],
 };
+
+export const ArticleData = [
+  {
+    title: "Setup your own podcast",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
+    subtitle: "PODCAST",
+    info: ["business", "startup"],
+    date: "Sep 14, 2021",
+    image: "/Article/photo1.png",
+    status: true,
+  },
+  {
+    title: "Doodle artwork 101",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...",
+    subtitle: "TIPS & TRICK",
+    info: ["art", "creative", "tips and trick"],
+    date: "Sep 12, 2021",
+    image: "/Article/photo2.png",
+  },
+];

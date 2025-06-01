@@ -1,6 +1,6 @@
 import RopeIcon from "../../../Svg/Layout/RopeIcon";
 import SponsorCard from "./SponsorCard";
-import { Vector6 } from "../../../Svg/Layout/Vectors";
+import { Vector1, Vector6, Vector2 } from "../../../Svg/Layout/Vectors";
 const Sponsor = ({ data }) => {
   return (
     <section className="relative bg-white py-35">
@@ -16,11 +16,20 @@ const Sponsor = ({ data }) => {
           </div>
           <p className="subtitle">Get exclusive episodes, merch and more</p>
         </div>
-        <ul className="max-mobile:grid-cols-1 grid grid-cols-3 gap-5 max-[1150px]:grid-cols-2">
+        <ul className="max-mobile:grid-cols-1 relative grid grid-cols-3 gap-5 max-[1150px]:grid-cols-2">
           <SponsorCard data={data.SponsorTop} />
           <SponsorCard
             data={data.SponsorBottom}
             status={false}
+          />
+          <Vector2
+            features={{ properties: "absolute -top-17 -right-3 w-30" }}
+          />
+          <Vector1
+            features={{
+              color: "black",
+              properties: "absolute -left-3 -bottom-10 w-25",
+            }}
           />
         </ul>
       </div>

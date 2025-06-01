@@ -12,7 +12,7 @@ const Header = memo(() => {
   ];
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <section className="header bg-custom-cream pt-6">
+    <header className="header bg-custom-cream pt-6">
       <div className="container-custom flex items-center justify-between gap-x-4">
         <img
           className="max-tablet:w-18 w-20"
@@ -30,17 +30,17 @@ const Header = memo(() => {
             className={`absolute top-1/2 h-0.5 w-full bg-black duration-300 ${isOpen ? "hidden" : ""}`}
           ></span>
           <span
-            className={`absolute bottom-0 h-0.5 w-full bg-black duration-300 ${isOpen ? "rotate-45 -translate-y-4" : ""}`}
+            className={`absolute bottom-0 h-0.5 w-full bg-black duration-300 ${isOpen ? "-translate-y-4 rotate-45" : ""}`}
           ></span>
         </div>
-        <HeaderOverlay  
+        <HeaderOverlay
           features={{
             data: HeaderData,
             statusOpen: isOpen,
           }}
         />
       </div>
-    </section>
+    </header>
   );
 });
 
