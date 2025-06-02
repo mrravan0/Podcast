@@ -20,6 +20,30 @@ export const HeroData = [
   },
 ];
 
+export const ListenInfo = [
+  {
+    image: "/Listen/photo1.png",
+    title:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio",
+    elementScroll: "fade-down-right",
+  },
+  {
+    image: "/Listen/photo2.png",
+    title:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio",
+    elementScroll: "fade-down-left",
+  },
+];
+
+export const ListenData = {
+  titleLine: [
+    "One of the best daily podcasts that",
+    "covers every topic on Spotify.",
+  ],
+  image: "/Listen/photo3.png",
+  svg: <SpotifyIcon features={{ size: "16" }} />,
+};
+
 export const ListenersData = [
   {
     titleLine: [
@@ -74,28 +98,6 @@ export const ListenersData = [
     svg: <SpotifyIcon features={{ size: "20" }} />,
   },
 ];
-
-export const ListenInfo = [
-  {
-    image: "/Listen/photo1.png",
-    title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio",
-  },
-  {
-    image: "/Listen/photo2.png",
-    title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio",
-  },
-];
-
-export const ListenData = {
-  titleLine: [
-    "One of the best daily podcasts that",
-    "covers every topic on Spotify.",
-  ],
-  image: "/Listen/photo3.png",
-  svg: <SpotifyIcon features={{ size: "16" }} />,
-};
 
 export const MembershipData = [
   {

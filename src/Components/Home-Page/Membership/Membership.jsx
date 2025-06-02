@@ -18,6 +18,8 @@ const Membership = ({ data }) => {
           {data?.map((item, index) => (
             <div
               className="flex flex-col items-center gap-y-7.5"
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-center"
               key={index}
             >
               <div className="flex size-20 items-center justify-center">

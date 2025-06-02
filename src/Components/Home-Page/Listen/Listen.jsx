@@ -1,5 +1,5 @@
 import Customers from "../../Layout/Customers/Customers";
-import { Vector1,Vector2 } from "../../../Svg/Layout/Vectors";
+import { Vector1, Vector2 } from "../../../Svg/Layout/Vectors";
 import RopeIcon from "../../../Svg/Layout/RopeIcon";
 const Listen = ({ info, data }) => {
   return (
@@ -12,14 +12,23 @@ const Listen = ({ info, data }) => {
           {info?.map((item, index) => (
             <div
               className="max-mobile:w-full flex w-2/5 flex-col items-center gap-y-10"
+              data-aos={item.elementScroll}
+              data-aos-anchor-placement="top-center"
               key={index}
             >
-              <img src={item.image} alt="" />
+              <img
+                src={item.image}
+                alt=""
+              />
               <h2 className="leading-0.4 font-medium">{item.title}</h2>
             </div>
           ))}
         </div>
-        <div className="bg-custom-cream min-laptop:mx-11 max-mobile:mx-0 relative mt-5 rounded-lg py-10 max-[1280px]:mx-4">
+        <div
+          className="bg-custom-cream min-laptop:mx-11 max-mobile:mx-0 relative mt-5 rounded-lg py-10 max-[1280px]:mx-4"
+          data-aos="zoom-in-down"
+          data-aos-anchor-placement="top-center"
+        >
           <Customers data={data} />
           <Vector1
             features={{

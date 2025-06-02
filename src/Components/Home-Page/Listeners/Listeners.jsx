@@ -3,7 +3,7 @@ import { Navigation } from "swiper/modules";
 import Customers from "../../Layout/Customers/Customers";
 import LeftIcon from "../../../Svg/Layout/LeftIcon";
 import RightIcon from "../../../Svg/Layout/RightIcon";
-import {Vector3} from "../../../Svg/Layout/Vectors";
+import { Vector3 } from "../../../Svg/Layout/Vectors";
 import RopeIcon from "../../../Svg/Layout/RopeIcon";
 import { useRef, useState, useEffect } from "react";
 import "./Listeners.scss";
@@ -31,15 +31,14 @@ const Listeners = ({ data }) => {
             What our listeners say
             <Vector3 features={{ properties: "absolute -top-11 -left-20" }} />
           </h1>
-          <p className="subtitle">
-            Their experience throughout every platform
-          </p>
+          <p className="subtitle">Their experience throughout every platform</p>
         </div>
         <div className="flex">
           <Swiper
             modules={[Navigation]}
             slidesPerView={1}
             spaceBetween={20}
+            loop={true}
             onSwiper={(swiper) => {
               setSwiperInstance(swiper);
             }}
@@ -49,7 +48,11 @@ const Listeners = ({ data }) => {
           >
             {data?.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="max-tablet:p-3 h-full rounded-lg bg-white p-10 text-black">
+                <div
+                  className="max-tablet:p-3 h-full rounded-lg bg-white p-10 text-black"
+                  data-aos="flip-down"
+                  data-aos-anchor-placement="top-center"
+                >
                   <Customers data={item} />
                 </div>
               </SwiperSlide>
