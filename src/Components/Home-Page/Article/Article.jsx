@@ -18,7 +18,7 @@ const Article = ({ data }) => {
         </div>
         <button className="btn self-center px-12 py-5">BROWSE ALL</button>
       </div>
-      <RopeIcon color={"black"} />
+      <RopeIcon color={"#cd4631"} />
     </section>
   );
 };

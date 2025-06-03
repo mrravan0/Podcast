@@ -2,6 +2,7 @@ import SpotifyIcon from "../../Svg/Layout/SpotifyIcon";
 import WaveIcon from "../../Svg/Layout/WaveIcon";
 import StarGroupIcon from "../../Svg/Layout/StarGroupIcon";
 import SmileIcon from "../../Svg/Layout/SmileIcon";
+import YoutubeIcon from "../../Svg/Layout/YoutubeIcon";
 import { Vector5 } from "../../Svg/Layout/Vectors";
 
 export const HeroData = [
@@ -16,7 +17,7 @@ export const HeroData = [
   },
   {
     title: "Google Podcast",
-    image: "/Hero/YoutubeIcon.png",
+    svg: <YoutubeIcon />,
   },
 ];
 
