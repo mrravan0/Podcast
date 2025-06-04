@@ -1,15 +1,7 @@
 import { memo, useState } from "react";
 import HeaderOverlay from "./HeaderOverlay";
 import "./Header.scss";
-const Header = memo(() => {
-  const HeaderData = [
-    { title: "About" },
-    { title: "Episodes", color: "text-custom-red" },
-    { title: "Testimonials", color: "text-custom-red" },
-    { title: "Pricing" },
-    { title: "Features" },
-    { title: "Blog", color: "text-custom-red" },
-  ];
+const Header = memo(({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="header bg-custom-cream pt-6">
@@ -35,7 +27,7 @@ const Header = memo(() => {
         </div>
         <HeaderOverlay
           features={{
-            data: HeaderData,
+            data: data,
             statusOpen: isOpen,
           }}
         />

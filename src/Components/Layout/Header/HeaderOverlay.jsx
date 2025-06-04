@@ -20,9 +20,12 @@ const HeaderOverlay = ({ features }) => {
                 <div className="flex h-4 w-4 items-center justify-center rounded-full border-2 border-solid border-black/40">
                   <DownIcon />
                 </div>
-                <ul className="absolute top-7 left-10 hidden flex-col gap-y-3 font-medium group-hover:flex">
+                <ul className="absolute top-7 left-10 z-10 hidden flex-col gap-y-3 rounded-lg bg-white p-2.5 font-medium group-hover:flex">
                   {features.data?.map((item, index) => (
-                    <li className={item?.color} key={index}>
+                    <li
+                      className={item?.color}
+                      key={index}
+                    >
                       {item.title}
                     </li>
                   ))}
@@ -32,7 +35,10 @@ const HeaderOverlay = ({ features }) => {
           </li>
           {isSmallScreen &&
             features.data?.map((item, index) => (
-              <li className={`cursor-pointer ${item?.color}`} key={index}>
+              <li
+                className={`cursor-pointer ${item?.color}`}
+                key={index}
+              >
                 {item.title}
               </li>
             ))}

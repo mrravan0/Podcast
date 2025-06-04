@@ -4,6 +4,7 @@
 @theme {
   --font-primary: "Montserrat Alternates", sans-serif;
   --breakpoint-laptop: 1440.9px;
+  --breakpoint-laptop-s: 1200.9px;
   --breakpoint-tablet: 1000.9px;
   --breakpoint-mobile: 750.9px;
   --breakpoint-mobile-s: 550.9px;
@@ -17,7 +18,10 @@
 
 @layer base {
   body {
-    @apply bg-custom-cream font-primary text-[clamp(16px,1.09375vw,21px)] font-bold;
+    @apply bg-custom-cream font-primary overflow-x-hidden text-[clamp(16px,1.09375vw,21px)] font-bold;
+  }
+  html {
+    @apply overflow-x-hidden;
   }
 }
 
