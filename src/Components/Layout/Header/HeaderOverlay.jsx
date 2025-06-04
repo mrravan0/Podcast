@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import DownIcon from "../../../Svg/Layout/DownIcon";
 import UseMediaQuery from "../../../CustomHooks/UseMediaQuery";
+import { Link } from "react-router-dom";
 const HeaderOverlay = ({ features }) => {
   const isSmallScreen = UseMediaQuery("(max-width:750.9px)");
   return (
@@ -9,8 +10,12 @@ const HeaderOverlay = ({ features }) => {
     >
       <nav>
         <ul className="header__list max-laptop:gap-x-15 max-tablet:gap-x-10 max-mobile:flex-col max-mobile:gap-y-10 flex items-center gap-x-20">
-          <li className="cursor-pointer">Episodes</li>
-          <li className="cursor-pointer">About</li>
+          <li className="cursor-pointer">
+            <Link to={"/"}>Episodes</Link>
+          </li>
+          <li className="cursor-pointer">
+            <Link to={"/about"}>About</Link>
+          </li>
           <li
             className={`cursor-pointer ${!isSmallScreen ? "group relative flex items-center gap-x-1.5" : ""}`}
           >

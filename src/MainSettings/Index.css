@@ -27,7 +27,7 @@
 
 @layer components {
   .btn {
-    @apply shadow-custom w-max cursor-pointer rounded-lg border-solid border-black bg-black text-[clamp(14px,1.09375vw,21px)] text-white duration-300 hover:scale-110;
+    @apply shadow-custom w-max cursor-pointer rounded-lg border border-solid border-black bg-black text-[clamp(14px,1.09375vw,21px)] text-white duration-300 hover:scale-110;
   }
   .container-custom {
     @apply max-laptop:max-w-300 mx-auto w-full max-w-397.5 px-5;

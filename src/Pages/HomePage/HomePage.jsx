@@ -15,7 +15,10 @@ const HomePage = () => {
 
   return (
     <Fragment>
-      <Hero data={HomeData.HeroData} />
+      <Hero
+        data={HomeData.HeroData}
+        info={HomeData.HeroInfo}
+      />
       <Listen
         info={HomeData.ListenInfo}
         data={HomeData.ListenData}

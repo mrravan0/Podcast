@@ -3,9 +3,10 @@ import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "../../Components/Layout/Header/Header";
 import HomePage from "../../Pages/HomePage/HomePage";
-import UseMediaQuery from "../../CustomHooks/UseMediaQuery";
+import AboutPage from "../../Pages/AboutPage/AboutPage";
 import Beta from "../../Components/Layout/Beta/Beta";
 import Footer from "../../Components/Layout/Footer/Footer";
+import UseMediaQuery from "../../CustomHooks/UseMediaQuery";
 import * as AppData from "./AppData";
 import "aos/dist/aos.css";
 import Aos from "aos";
@@ -14,9 +15,9 @@ function App() {
   const isMobileScreen = UseMediaQuery("(max-width:768px)");
   useEffect(() => {
     Aos.init({
-      delay: isMobileScreen ? 250 : 350,
+      delay: isMobileScreen ? 200 : 250,
       duration: 450,
-      offset: isMobileScreen ? 250 : 450,
+      offset: isMobileScreen ? 250 : 150,
     });
   }, []);
 
@@ -28,6 +29,10 @@ function App() {
           <Route
             path="/"
             element={<HomePage />}
+          />
+          <Route
+            path="/about"
+            element={<AboutPage />}
           />
         </Routes>
       </main>

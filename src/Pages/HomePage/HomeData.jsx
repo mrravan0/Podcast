@@ -21,6 +21,14 @@ export const HeroData = [
   },
 ];
 
+export const HeroInfo = {
+  title: ["Your Daily", "Podcast"],
+  description: [
+    "We cover all kinds of categories and",
+    "a weekly special guest.",
+  ],
+};
+
 export const ListenInfo = [
   {
     image: "/Listen/photo1.png",
