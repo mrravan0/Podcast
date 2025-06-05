@@ -1,5 +1,7 @@
 import SmileIcon from "../../Svg/Layout/SmileIcon";
 import { Vector5 } from "../../Svg/Layout/Vectors";
+import SpotifyIcon from "../../Svg/Layout/SpotifyIcon";
+import YoutubeIcon from "../../Svg/Layout/YoutubeIcon";
 
 export const AboutHeroData = [
   { count: "76", description: "Community Members" },
@@ -47,5 +49,26 @@ export const AboutListenersData = [
     aos: "fade-left",
     image: "/Listeners/ListenersCard/photo2.png",
     svg: <Vector5 properties={"max-w-40 max-laptop:max-w-32.5"} />,
+  },
+];
+
+export const AboutSponsorData = [
+  {
+    title: "Google Podcast",
+    description:
+      "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+    image: "/Hero/GoogleIcon.png",
+  },
+  {
+    title: "Spotify",
+    description:
+      "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+    svg: <SpotifyIcon features={{ size: "52" }} />,
+  },
+  {
+    title: "Youtube",
+    description:
+      "Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.",
+    svg: <YoutubeIcon features={{ color: "red", size: "52" }} />,
   },
 ];
