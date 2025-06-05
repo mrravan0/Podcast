@@ -37,14 +37,12 @@ const Beta = () => {
       <img
         className="max-tablet:w-60 max-mobile:hidden max-laptop-s:w-77.5 absolute bottom-0 left-0 w-96"
         data-aos="fade-right"
-        data-aos-anchor-placement="top-center"
         src="/Beta/photo1.png"
         alt=""
       />
       <img
         className="max-tablet:w-60 max-mobile:hidden max-laptop-s:w-65 absolute right-0 bottom-0"
         data-aos="fade-left"
-        data-aos-anchor-placement="top-center"
         src="/Beta/photo2.png"
         alt=""
       />

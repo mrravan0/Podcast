@@ -17,7 +17,6 @@ const AboutHero = ({ data, info }) => {
       <ul
         className="container-custom absolute -bottom-40 left-1/2 z-10 flex -translate-x-1/2 items-center gap-x-5"
         data-aos="flip-down"
-        data-anchor-placement="top-center"
       >
         {data?.map((item, index) => (
           <li

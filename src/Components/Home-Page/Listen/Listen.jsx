@@ -13,7 +13,6 @@ const Listen = ({ info, data }) => {
             <div
               className="max-mobile:w-full flex w-2/5 flex-col items-center gap-y-10"
               data-aos={item.elementScroll}
-              data-aos-anchor-placement="top-center"
               key={index}
             >
               <img
@@ -27,7 +26,6 @@ const Listen = ({ info, data }) => {
         <div
           className="bg-custom-cream min-laptop:mx-11 max-mobile:mx-0 relative mt-5 rounded-lg py-10 max-[1280px]:mx-4"
           data-aos="zoom-in-down"
-          data-aos-anchor-placement="top-center"
         >
           <Customers data={data} />
           <Vector1

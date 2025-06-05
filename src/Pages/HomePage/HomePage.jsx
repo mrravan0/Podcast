@@ -6,12 +6,12 @@ import Membership from "../../Components/Home-Page/Membership/Membership";
 import Recent from "../../Components/Home-Page/Recent/Recent";
 import Sponsor from "../../Components/Home-Page/Sponsor/Sponsor";
 import Article from "../../Components/Home-Page/Article/Article";
-import Aos from "aos";
 import * as HomeData from "./HomeData";
+import Aos from "aos";
 const HomePage = () => {
   useEffect(() => {
     Aos.refresh();
-  });
+  }, []);
 
   return (
     <Fragment>

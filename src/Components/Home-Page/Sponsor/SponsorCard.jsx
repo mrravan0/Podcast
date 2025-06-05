@@ -8,7 +8,6 @@ const SponsorCard = memo(({ data, status = true }) => {
           key={index}
           className={`max-laptop:px-10 max-mobile:px-5 flex flex-col rounded-lg border-2 border-solid px-13.5 ${item?.status ? "border-custom-red bg-[#f7ede8]" : "border-black"} ${status ? "gap-y-22.5 pt-15 pb-7.5" : "gap-y-5 py-10"} `}
           data-aos={status ? "flip-right" : "flip-left"}
-          data-aos-anchor-placement="top-center"
         >
           {status ? (
             <Fragment>

@@ -2,10 +2,7 @@ import { memo } from "react";
 
 const EpisodesCard = memo(({ data }) => {
   return (
-    <div
-      data-aos={data.status ? "fade-up-right" : "fade-up-left"}
-      data-aos-anchor-placement="top-center"
-    >
+    <div data-aos={data.status ? "fade-up-right" : "fade-up-left"}>
       <div
         className={`flex cursor-pointer flex-col gap-y-5 rounded-xl border-2 border-solid border-black bg-white p-4 duration-300 hover:scale-90 ${data.status ? "shadow-[10px_10px_0_0_#81adc8]" : ""}`}
       >

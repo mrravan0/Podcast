@@ -51,7 +51,6 @@ const Listeners = ({ data }) => {
                 <div
                   className="max-tablet:p-3 h-full rounded-lg bg-white p-10 text-black"
                   data-aos="flip-down"
-                  data-aos-anchor-placement="top-center"
                 >
                   <Customers data={item} />
                 </div>
