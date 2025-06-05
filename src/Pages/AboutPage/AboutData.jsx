@@ -37,7 +37,7 @@ export const AboutListenersData = [
     host: "1",
     description:
       "Lorem ipsum dolor sit amet con sectet piscing elit, sed do eiusmod tempor rarylet podofcast.",
-    aos: "fade-right",
+    aos: "fade-up-right",
     image: "/Listeners/ListenersCard/photo1.png",
     svg: <SmileIcon properties={"max-w-40 max-laptop:max-w-32.5"} />,
   },
@@ -46,7 +46,7 @@ export const AboutListenersData = [
     host: "2",
     description:
       "Lorem ipsum dolor sit amet con sectet piscing elit, sed do eiusmod tempor rarylet podofcast.",
-    aos: "fade-left",
+    aos: "fade-up-left",
     image: "/Listeners/ListenersCard/photo2.png",
     svg: <Vector5 properties={"max-w-40 max-laptop:max-w-32.5"} />,
   },

@@ -19,7 +19,7 @@ const AboutListeners = ({ data, info }) => {
           </div>
           <div className="flex flex-col gap-y-20">
             <h1 className="title text-center">About and History</h1>
-            <div className="text-custom-grey flex items-center justify-between gap-x-2.5 font-medium">
+            <div className="text-custom-grey max-mobile-s:flex-col max-mobile-s:gap-y-5 flex items-center justify-between gap-x-2.5 font-medium">
               {info?.map((item, index) => (
                 <div
                   className="w-full"
@@ -38,7 +38,7 @@ const AboutListeners = ({ data, info }) => {
         </div>
         <div className="flex flex-col gap-y-20">
           <h1 className="title text-center">Founder and Main Host</h1>
-          <div className="flex justify-between gap-x-5">
+          <div className="max-laptop-s:flex-col flex justify-between gap-5">
             {data?.map((item, index) => (
               <AboutListenersCard
                 data={item}

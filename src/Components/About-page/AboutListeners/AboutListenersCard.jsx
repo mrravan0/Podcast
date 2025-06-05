@@ -6,10 +6,11 @@ const AboutListenersCard = ({ data }) => {
     <div data-aos={data.aos}>
       <div className="flex h-full cursor-pointer justify-between gap-x-2.5 rounded-lg border border-solid border-black p-4 duration-300 hover:shadow-[10px_10px_0_0_#000]">
         <img
+          className="max-mobile-s:hidden"
           src={data.image}
           alt=""
         />
-        <div className="flex flex-col items-end justify-between gap-y-40">
+        <div className="max-mobile-s:items-center flex flex-col items-end justify-between gap-y-40">
           {data.svg}
           <div className="flex flex-col gap-y-5">
             <div className="flex flex-col gap-y-1.5">
