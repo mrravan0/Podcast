@@ -72,3 +72,10 @@ export const AboutSponsorData = [
     svg: <YoutubeIcon features={{ color: "red", size: "52" }} />,
   },
 ];
+
+export const FormData = [
+  { title: "Full name", type: "text", placeholder: "Porter Sev|" },
+  { title: "Email", type: "email", placeholder: "johndoe@gmail.com" },
+  { title: "Phone", type: "tel", placeholder: "Phone" },
+  { title: "Subject", type: "text", placeholder: "Subject..." },
+];

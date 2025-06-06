@@ -119,7 +119,7 @@ export const MembershipData = [
     title: "Exclusive Content",
     description:
       "Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.",
-    svg: <StarGroupIcon />,
+    svg: <StarGroupIcon properties={'size-17'}/>,
   },
   {
     title: "Join the Community",
@@ -137,7 +137,7 @@ export const MembershipData = [
     title: "Exclusive Content",
     description:
       "Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.",
-    svg: <StarGroupIcon />,
+    svg: <StarGroupIcon properties={'size-17'} />,
   },
   {
     title: "And much more!",
