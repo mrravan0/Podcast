@@ -3,13 +3,15 @@ import { useLocation } from "react-router-dom";
 const DetailsHero = memo(() => {
   const location = useLocation();
   const DetailsData = location.state;
+  console.log(DetailsData);
+
   return (
     <section className="hero pt-25 pb-10">
-      <div className="background-image bg-position-[right_center,_left_center]">
+      <div className="background-image bg-position-[right_center,_left_center] max-[800px]:bg-none">
         <div className="container-custom flex flex-col gap-y-20">
-          <div className="flex items-center justify-between gap-x-2.5">
+          <div className="flex items-center justify-between gap-5 max-tablet:flex-col">
             <img
-              className="shadow-[12px_12px_0_0_#81adc8] rounded-lg cursor-pointer hover:scale-105 duration-300"
+              className="cursor-pointer rounded-lg shadow-[12px_12px_0_0_#81adc8] duration-300 hover:scale-105"
               src={DetailsData.img}
               alt=""
             />
@@ -37,24 +39,36 @@ const DetailsHero = memo(() => {
                     />
                     <p>
                       Hosted by:
-                      <span className="text-custom-red">Jane Doe</span>
+                      <span className="text-custom-red"> Jane Doe</span>
                     </p>
                   </div>
                   <p className="text-custom-grey font-medium">Sep 22, 2021</p>
                 </div>
               </div>
-              <div className="max-laptop:gap-x-5 flex items-center gap-x-6.75">
-                <button className="btn max-laptop:px-9 px-12 py-5">
+              <div className="max-laptop:gap-5 flex items-center gap-x-6.75 max-mobile-s:flex-col">
+                <button className="btn max-laptop:px-9 px-12 py-5 max-mobile-s:w-full">
                   SUBSCRIBE
                 </button>
-                <button className="btn-features max-laptop:px-9 px-12 py-5">
+                <button className="btn-features max-laptop:px-9 px-12 py-5 max-mobile-s:w-full">
                   Listen Now
                   <span className="text-custom-red"> (46 min)</span>
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex items-center">Buraya asagi melumat</div>
+          <div className="max-laptop:text-sm text-custom-grey flex items-center gap-x-15 text-lg">
+            <p>Tags :</p>
+            <div className="max-laptop:gap-x-1.5 flex items-center gap-x-2.5">
+              {DetailsData.info?.map((item, index) => (
+                <div
+                  className="border-custom-grey rounded-lg border border-solid px-4 py-1.5 font-medium"
+                  key={index}
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

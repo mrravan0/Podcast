@@ -16,8 +16,8 @@ function App() {
   const isMobileScreen = UseMediaQuery("(max-width:768px)");
   useEffect(() => {
     Aos.init({
-      delay: isMobileScreen ? 200 : 400,
-      duration: 450,
+      delay: isMobileScreen ? 200 : 550,
+      duration: 350,
       offset: isMobileScreen ? 200 : 100,
     });
   }, []);
