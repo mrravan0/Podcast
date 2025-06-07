@@ -1,10 +1,17 @@
 import { memo } from "react";
+import { useNavigate } from "react-router-dom";
 
 const EpisodesCard = memo(({ data }) => {
+  const navigate = useNavigate();
+  const goToDetails = () => {
+    navigate("/details", { state: data });
+  };
+
   return (
     <div data-aos={data.status ? "fade-up-right" : "fade-up-left"}>
       <div
         className={`flex cursor-pointer flex-col gap-y-5 rounded-xl border-2 border-solid border-black bg-white p-4 duration-300 hover:scale-90 ${data.status ? "shadow-[10px_10px_0_0_#81adc8]" : ""}`}
+        onClick={goToDetails}
       >
         <div className="max-mobile-s:flex-col flex items-center justify-between gap-x-4">
           <img

@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "../../Components/Layout/Header/Header";
 import HomePage from "../../Pages/HomePage/HomePage";
 import AboutPage from "../../Pages/AboutPage/AboutPage";
+import EpisodesPage from "../../Pages/EpisodesPage/EpisodesPage";
 import Beta from "../../Components/Layout/Beta/Beta";
 import Footer from "../../Components/Layout/Footer/Footer";
 import UseMediaQuery from "../../CustomHooks/UseMediaQuery";
@@ -33,6 +34,10 @@ function App() {
           <Route
             path="/about"
             element={<AboutPage />}
+          />
+          <Route
+            path="/details"
+            element={<EpisodesPage />}
           />
         </Routes>
       </main>

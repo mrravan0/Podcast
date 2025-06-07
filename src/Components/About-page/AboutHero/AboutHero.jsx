@@ -8,9 +8,7 @@ const AboutHero = ({ data, info }) => {
         property={"pb-64 max-mobile:pb-16"}
       >
         <div className="max-mobile:flex-col flex items-center gap-5">
-          <button className="shadow-custom w-max cursor-pointer rounded-lg border-2 border-solid border-black px-12 py-6 text-[clamp(14px,1.09375vw,21px)] duration-300 hover:scale-110">
-            BECOME SPONSOR
-          </button>
+          <button className="btn-features px-12 py-6">BECOME SPONSOR</button>
           <button className="btn max-mobile:w-full px-12 py-6">
             Subscribe
           </button>

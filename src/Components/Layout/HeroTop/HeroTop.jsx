@@ -1,13 +1,13 @@
 const HeroTop = ({ children, info, property }) => {
   return (
-    <div className="hero__top min-mobile:bg-[url(/Hero/HeroRight.png),url(/Hero/HeroLeft.png)] min-mobile:bg-no-repeat">
+    <div className="hero__top background-image">
       <div
-        className={`container-custom flex flex-col items-center gap-y-10 text-center ${property}`}
+        className={`container-custom flex flex-col items-center gap-y-10 text-center ${property ? property : ""}`}
       >
         <h1 className="hero__top-title leading-none font-bold">
-          {info.title[0]}
+          {info?.title[0]}
           <br />
-          <span className="text-custom-red">{info.title[1]}</span>
+          <span className="text-custom-red">{info?.title[1]}</span>
         </h1>
         <p className="hero__top-subtitle font-medium">
           {info?.description[0]}

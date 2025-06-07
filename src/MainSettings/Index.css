@@ -29,7 +29,13 @@
   .btn {
     @apply shadow-custom w-max cursor-pointer rounded-lg border border-solid border-black bg-black text-[clamp(14px,1.09375vw,21px)] text-white duration-300 hover:scale-110;
   }
+  .btn-features {
+    @apply shadow-custom w-max cursor-pointer rounded-lg border border-solid border-black text-[clamp(14px,1.09375vw,21px)] duration-300 hover:scale-110;
+  }
   .container-custom {
     @apply max-laptop:max-w-300 mx-auto w-full max-w-397.5 px-5;
+  }
+  .background-image {
+    @apply min-mobile:bg-[url(/Hero/HeroRight.png),url(/Hero/HeroLeft.png)] min-mobile:bg-no-repeat;
   }
 }
