@@ -3,19 +3,17 @@ import { useLocation } from "react-router-dom";
 const DetailsHero = memo(() => {
   const location = useLocation();
   const DetailsData = location.state;
-  console.log(DetailsData);
-
   return (
     <section className="hero pt-25 pb-10">
       <div className="background-image bg-position-[right_center,_left_center] max-[800px]:bg-none">
         <div className="container-custom flex flex-col gap-y-20">
-          <div className="flex items-center justify-between gap-5 max-tablet:flex-col">
+          <div className="max-tablet:flex-col flex items-center justify-between gap-5">
             <img
-              className="cursor-pointer rounded-lg shadow-[12px_12px_0_0_#81adc8] duration-300 hover:scale-105"
+              className="w-full max-w-117.5 cursor-pointer rounded-lg shadow-[12px_12px_0_0_#81adc8] duration-300 hover:scale-105"
               src={DetailsData.img}
               alt=""
             />
-            <div className="flex flex-col gap-y-15">
+            <div className="max-tablet:w-full flex flex-col gap-y-15">
               <div className="flex flex-col gap-y-10">
                 <div className="flex flex-col gap-y-10">
                   <div className="after:bg-custom-grey relative flex flex-col gap-y-4 after:absolute after:-bottom-5 after:left-0 after:h-0.5 after:w-full">
@@ -45,11 +43,11 @@ const DetailsHero = memo(() => {
                   <p className="text-custom-grey font-medium">Sep 22, 2021</p>
                 </div>
               </div>
-              <div className="max-laptop:gap-5 flex items-center gap-x-6.75 max-mobile-s:flex-col">
-                <button className="btn max-laptop:px-9 px-12 py-5 max-mobile-s:w-full">
+              <div className="max-laptop:gap-5 max-mobile-s:flex-col flex items-center gap-x-6.75">
+                <button className="btn max-laptop:px-9 max-mobile-s:w-full px-12 py-5">
                   SUBSCRIBE
                 </button>
-                <button className="btn-features max-laptop:px-9 px-12 py-5 max-mobile-s:w-full">
+                <button className="btn-features max-laptop:px-9 max-mobile-s:w-full px-12 py-5">
                   Listen Now
                   <span className="text-custom-red"> (46 min)</span>
                 </button>

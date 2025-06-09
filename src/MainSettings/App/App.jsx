@@ -18,7 +18,7 @@ function App() {
     Aos.init({
       delay: isMobileScreen ? 200 : 550,
       duration: 350,
-      offset: isMobileScreen ? 200 : 100,
+      offset: isMobileScreen ? 150 : 50,
     });
   }, []);
 
