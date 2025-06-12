@@ -2,20 +2,20 @@ import SpotifyIcon from "../../Svg/Layout/SpotifyIcon";
 import YoutubeIcon from "../../Svg/Layout/YoutubeIcon";
 
 export const HeaderData = [
-  { title: "Episodes", color: "text-custom-red" },
+  { title: "Episodes", color: "text-custom-red", to: '/' },
   { title: "Testimonials", color: "text-custom-red" },
   { title: "Pricing" },
   { title: "Features" },
-  { title: "Blog", color: "text-custom-red" },
+  { title: "Blog", color: "text-custom-red", to: '/blog' },
 ];
 
 export const FooterData = [
-  { title: "About" },
-  { title: "Episodes", status: true },
+  { title: "About" , to: '/about'},
+  { title: "Episodes", status: true , to: '/'},
   { title: "Testimonials", status: true },
   { title: "Pricing" },
   { title: "Features" },
-  { title: "Blog" },
+  { title: "Blog", to: '/blog' },
 ];
 
 export const FooterInfo = [

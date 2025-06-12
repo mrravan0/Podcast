@@ -3,6 +3,7 @@ import InstagramIcon from "../../../Svg/Footer/InstagramIcon";
 import TikTokIcon from "../../../Svg/Footer/TikTokIcon";
 import AppStoreIcon from "../../../Svg/Footer/AppStoreIcon";
 import PlayMarketIcon from "../../../Svg/Footer/PlayMarketIcon";
+import { Link } from "react-router-dom";
 import { memo } from "react";
 const Footer = memo(({ data, info }) => {
   return (
@@ -32,7 +33,7 @@ const Footer = memo(({ data, info }) => {
                   className={item.status ? "text-custom-red" : "text-black"}
                   key={index}
                 >
-                  <p>{item.title}</p>
+                  <Link to={item.to}>{item.title}</Link>
                 </li>
               ))}
             </ul>

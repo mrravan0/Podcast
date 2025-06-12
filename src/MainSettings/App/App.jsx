@@ -5,6 +5,7 @@ import Header from "../../Components/Layout/Header/Header";
 import HomePage from "../../Pages/HomePage/HomePage";
 import AboutPage from "../../Pages/AboutPage/AboutPage";
 import EpisodesPage from "../../Pages/EpisodesPage/EpisodesPage";
+import BlogPage from "../../Pages/BlogPage/BlogPage";
 import Beta from "../../Components/Layout/Beta/Beta";
 import Footer from "../../Components/Layout/Footer/Footer";
 import UseMediaQuery from "../../CustomHooks/UseMediaQuery";
@@ -16,7 +17,7 @@ function App() {
   const isMobileScreen = UseMediaQuery("(max-width:768px)");
   useEffect(() => {
     Aos.init({
-      delay: isMobileScreen ? 200 : 550,
+      delay: isMobileScreen ? 200 : 450,
       duration: 350,
       offset: isMobileScreen ? 150 : 50,
     });
@@ -38,6 +39,10 @@ function App() {
           <Route
             path="/details"
             element={<EpisodesPage />}
+          />
+          <Route
+            path="/blog"
+            element={<BlogPage />}
           />
         </Routes>
       </main>

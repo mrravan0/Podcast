@@ -31,7 +31,7 @@ const HeaderOverlay = ({ features }) => {
                       className={item?.color}
                       key={index}
                     >
-                      {item.title}
+                      <Link to={item.to}>{item.title}</Link>
                     </li>
                   ))}
                 </ul>
