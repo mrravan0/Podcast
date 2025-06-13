@@ -17,7 +17,7 @@ const DetailsLatest = ({ data }) => {
     <section className="relative bg-white py-35">
       <div className="container-custom flex flex-col gap-y-25">
         <div className="flex items-start justify-center text-center">
-          <Vector6 properties={"w-15 rotate-250"} />
+          <Vector6 properties={"max-w-15 w-full rotate-250"} />
           <h1 className="title">Latest Episode</h1>
         </div>
         <ul className="border-custom-grey flex justify-between gap-x-2.5 border-b border-solid font-medium pb-7.5">
