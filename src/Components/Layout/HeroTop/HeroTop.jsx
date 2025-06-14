@@ -1,6 +1,6 @@
 const HeroTop = ({ children, info, property }) => {
   return (
-    <div className="hero__top background-image">
+    <div className="background-image">
       <div
         className={`container-custom flex flex-col items-center gap-y-10 text-center ${property ? property : ""}`}
       >

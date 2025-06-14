@@ -36,6 +36,6 @@
     @apply max-laptop:max-w-300 mx-auto w-full max-w-397.5 px-5;
   }
   .background-image {
-    @apply min-mobile:bg-[url(/Hero/HeroRight.png),url(/Hero/HeroLeft.png)] min-mobile:bg-no-repeat;
+    @apply min-mobile:bg-[url(/Hero/HeroRight.png),url(/Hero/HeroLeft.png)] min-mobile:bg-no-repeat bg-position-[right_center,_left_center];
   }
 }

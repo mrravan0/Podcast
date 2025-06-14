@@ -1,9 +1,6 @@
 @use "../../../Sass-Scss/" as *;
 .hero {
   &__top {
-    background-position:
-      right 60px center,
-      center left;
     &-title {
       @include fluid-text(calculate(96), 56);
     }

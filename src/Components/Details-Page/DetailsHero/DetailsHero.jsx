@@ -5,7 +5,7 @@ const DetailsHero = memo(() => {
   const DetailsData = location.state;
   return (
     <section className="hero pt-25 pb-10">
-      <div className="background-image bg-position-[right_center,_left_center] max-[800px]:bg-none">
+      <div className="background-image max-[800px]:bg-none">
         <div className="container-custom flex flex-col gap-y-20">
           <div className="max-tablet:flex-col flex items-center justify-between gap-5">
             <img

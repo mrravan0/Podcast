@@ -6,6 +6,7 @@ import HomePage from "../../Pages/HomePage/HomePage";
 import AboutPage from "../../Pages/AboutPage/AboutPage";
 import EpisodesPage from "../../Pages/EpisodesPage/EpisodesPage";
 import BlogPage from "../../Pages/BlogPage/BlogPage";
+import SingleBlogPage from "../../Pages/SingleBlogPage/SingleBlogPage";
 import Beta from "../../Components/Layout/Beta/Beta";
 import Footer from "../../Components/Layout/Footer/Footer";
 import UseMediaQuery from "../../CustomHooks/UseMediaQuery";
@@ -33,16 +34,20 @@ function App() {
             element={<HomePage />}
           />
           <Route
-            path="/about"
+            path="about"
             element={<AboutPage />}
           />
           <Route
-            path="/details"
+            path="details"
             element={<EpisodesPage />}
           />
           <Route
-            path="/blog"
+            path="blog"
             element={<BlogPage />}
+          />
+          <Route
+            path="single"
+            element={<SingleBlogPage />}
           />
         </Routes>
       </main>
