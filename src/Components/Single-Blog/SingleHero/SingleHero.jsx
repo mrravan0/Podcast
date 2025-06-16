@@ -1,16 +1,18 @@
-import BlogLeftIcon from "../../../Svg/Blog/BlogLeftIcon";
 import TwitterIcon from "../../../Svg/Footer/TwitterIcon";
 import TikTokIcon from "../../../Svg/Footer/TikTokIcon";
 import InstagramIcon from "../../../Svg/Footer/InstagramIcon";
+import { Link } from "react-router-dom";
 const SingleHero = () => {
   return (
     <section className="background-image pt-20 pb-11.5">
       <div className="container-custom flex flex-col items-center gap-y-12.5 text-center">
-        <div className="text-custom-grey flex items-center justify-between w-full">
-          <div className="flex items-center gap-x-2.5">
-            <BlogLeftIcon />
-            <p className="font-medium">Back to articles</p>
-          </div>
+        <div className="text-custom-grey flex w-full items-center justify-between">
+          <Link
+            className="font-medium hover:scale-110 duration-300"
+            to={"/blog"}
+          >
+            Back to articles
+          </Link>
           <p>Sep 12, 2021</p>
         </div>
         <div className="flex flex-col gap-y-10">
