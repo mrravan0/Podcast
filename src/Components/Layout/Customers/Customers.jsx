@@ -1,9 +1,9 @@
 const Customers = ({ data }) => {
   return (
-    <div className="customers flex flex-col">
+    <div className="customers flex flex-col p-2.5">
       <p className="text-custom-red text-8xl">“</p>
       <div className="flex flex-col items-center gap-y-10">
-        <div className="">
+        <div className="flex flex-col">
           {data.titleLine?.map((item, index) => (
             <h3
               className="info"
