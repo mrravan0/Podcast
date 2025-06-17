@@ -1,8 +1,8 @@
 import ArticleCard from "./ArticleCard";
 import RopeIcon from "../../../Svg/Layout/RopeIcon";
-const Article = ({ data }) => {
+const Article = ({ data, property }) => {
   return (
-    <section className="relative bg-white py-35">
+    <section className={`relative py-35 ${property}`}>
       <div className="container-custom flex flex-col gap-y-25">
         <div className="flex flex-col gap-y-5 text-center">
           <h1 className="title">Article and News</h1>

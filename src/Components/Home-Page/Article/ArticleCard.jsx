@@ -3,8 +3,11 @@ import { useNavigate } from "react-router-dom";
 const ArticleCard = ({ data }) => {
   const navigate = useNavigate();
   return (
-    <div data-aos={data.status ? "zoom-in-right" : "zoom-in-left"} onClick={() => navigate('/single', {state: data})}>
-      <div className="flex cursor-pointer flex-col gap-y-10 rounded-lg border-2 border-solid border-black p-4 transition-shadow duration-300 hover:shadow-[10px_10px_0_0_#000]">
+    <div
+      data-aos={data.status ? "zoom-in-right" : "zoom-in-left"}
+      onClick={() => navigate("/single", { state: data })}
+    >
+      <div className="flex cursor-pointer flex-col gap-y-10 rounded-lg border-2 border-solid border-black bg-white p-4 transition-shadow duration-300 hover:shadow-[10px_10px_0_0_#000]">
         <img
           src={data.image}
           alt=""

@@ -27,7 +27,7 @@ const HomePage = () => {
       <Membership data={HomeData.MembershipData} />
       <Recent data={HomeData.RecentData} />
       <Sponsor data={HomeData.SponsorData} />
-      <Article data={HomeData.ArticleData} />
+      <Article data={HomeData.ArticleData} property={'bg-white'} />
     </Fragment>
   );
 };
