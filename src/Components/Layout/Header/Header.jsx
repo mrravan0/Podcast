@@ -12,7 +12,7 @@ const Header = memo(({ data }) => {
           alt="Logo"
         />
         <div
-          className="g-y-0.5 min-mobile:hidden relative z-60 flex h-5 w-10 flex-col"
+          className={`g-y-0.5 min-mobile:hidden z-60 flex h-5 w-10 flex-col ${isOpen ? "fixed right-5" : "relative"}`}
           onClick={() => setIsOpen(!isOpen)}
         >
           <span
@@ -29,6 +29,7 @@ const Header = memo(({ data }) => {
           features={{
             data: data,
             statusOpen: isOpen,
+            setStatusOpen: setIsOpen
           }}
         />
       </div>

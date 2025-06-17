@@ -7,7 +7,7 @@ const ArticleCard = ({ data }) => {
       data-aos={data.status ? "zoom-in-right" : "zoom-in-left"}
       onClick={() => navigate("/single", { state: data })}
     >
-      <div className="flex cursor-pointer flex-col gap-y-10 rounded-lg border-2 border-solid border-black bg-white p-4 transition-shadow duration-300 hover:shadow-[10px_10px_0_0_#000]">
+      <div className="flex cursor-pointer flex-col gap-y-10 rounded-lg border-2 border-solid border-black bg-white p-4 transition-shadow duration-300 hover:shadow-[10px_10px_0_0_#000] h-full">
         <img
           src={data.image}
           alt=""
@@ -28,7 +28,7 @@ const ArticleCard = ({ data }) => {
           </p>
         </div>
         <div className="max-tablet:flex-col flex items-center justify-between gap-y-2.5">
-          <div className="max-laptop:gap-1.5 max-mobile-s:flex-col flex items-center gap-2">
+          <div className="max-laptop:gap-1.5 max-mobile:flex-col flex items-center gap-2">
             {data?.info.map((item, index) => (
               <div
                 className="border-custom-grey text-custom-grey rounded-sm border-2 border-solid px-3 py-1.5"

@@ -1,20 +1,30 @@
-import { Fragment } from "react";
+import { Fragment, memo } from "react";
 import DownIcon from "../../../Svg/Layout/DownIcon";
 import UseMediaQuery from "../../../CustomHooks/UseMediaQuery";
 import { Link } from "react-router-dom";
-const HeaderOverlay = ({ features }) => {
+const HeaderOverlay = memo(({ features }) => {
   const isSmallScreen = UseMediaQuery("(max-width:750.9px)");
   return (
     <div
-      className={`${features.statusOpen ? "flex" : "hidden"} bg-custom-cream min-mobile:contents absolute bottom-0 left-0 z-50 h-full w-full flex-col justify-center gap-y-10 p-4`}
+      className={`${features.statusOpen ? "flex" : "hidden"} bg-custom-cream min-mobile:contents fixed bottom-0 left-0 z-50 h-full w-full flex-col justify-center gap-y-10 p-4`}
     >
       <nav>
         <ul className="header__list max-laptop:gap-x-15 max-tablet:gap-x-10 max-mobile:flex-col max-mobile:gap-y-10 flex items-center gap-x-20">
           <li className="cursor-pointer">
-            <Link to={"/"}>Episodes</Link>
+            <Link
+              to={"/"}
+              onClick={() => features.setStatusOpen(!features.statusOpen)}
+            >
+              Episodes
+            </Link>
           </li>
           <li className="cursor-pointer">
-            <Link to={"/about"}>About</Link>
+            <Link
+              to={"/about"}
+              onClick={() => features.setStatusOpen(!features.statusOpen)}
+            >
+              About
+            </Link>
           </li>
           <li
             className={`cursor-pointer ${!isSmallScreen ? "group relative flex items-center gap-x-1.5" : ""}`}
@@ -44,7 +54,12 @@ const HeaderOverlay = ({ features }) => {
                 className={`cursor-pointer ${item?.color}`}
                 key={index}
               >
-                {item.title}
+                <Link
+                  to={item.to}
+                  onClick={() => features.setStatusOpen(!features.statusOpen)}
+                >
+                  {item.title}
+                </Link>
               </li>
             ))}
         </ul>
@@ -57,5 +72,5 @@ const HeaderOverlay = ({ features }) => {
       </div>
     </div>
   );
-};
+});
 export default HeaderOverlay;

@@ -2,11 +2,6 @@ import { Fragment } from "react/jsx-runtime";
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "../../Components/Layout/Header/Header";
-import HomePage from "../../Pages/HomePage/HomePage";
-import AboutPage from "../../Pages/AboutPage/AboutPage";
-import EpisodesPage from "../../Pages/EpisodesPage/EpisodesPage";
-import BlogPage from "../../Pages/BlogPage/BlogPage";
-import SingleBlogPage from "../../Pages/SingleBlogPage/SingleBlogPage";
 import Beta from "../../Components/Layout/Beta/Beta";
 import Footer from "../../Components/Layout/Footer/Footer";
 import UseMediaQuery from "../../CustomHooks/UseMediaQuery";
@@ -29,26 +24,13 @@ function App() {
       <Header data={AppData.HeaderData} />
       <main>
         <Routes>
-          <Route
-            path="/"
-            element={<HomePage />}
-          />
-          <Route
-            path="about"
-            element={<AboutPage />}
-          />
-          <Route
-            path="details"
-            element={<EpisodesPage />}
-          />
-          <Route
-            path="blog"
-            element={<BlogPage />}
-          />
-          <Route
-            path="single"
-            element={<SingleBlogPage />}
-          />
+          {AppData.DataRouting?.map((item, index) => (
+            <Route
+              path={item.path}
+              element={item.element}
+              key={index}
+            />
+          ))}
         </Routes>
       </main>
       <Beta />
