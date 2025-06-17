@@ -11,7 +11,11 @@ const Listeners = ({ data }) => {
         <div className="mb-10 flex flex-col items-center gap-y-5">
           <h1 className="title relative">
             What our listeners say
-            <Vector3 features={{ properties: "absolute -top-11 -left-20" }} />
+            <Vector3
+              features={{
+                properties: "max-mobile:hidden absolute -top-11 -left-20",
+              }}
+            />
           </h1>
           <p className="subtitle">Their experience throughout every platform</p>
         </div>

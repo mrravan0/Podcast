@@ -7,7 +7,6 @@ import SpotifyIcon from "../../Svg/Layout/SpotifyIcon";
 import YoutubeIcon from "../../Svg/Layout/YoutubeIcon";
 
 export const HeaderData = [
-  { title: "Episodes", color: "text-custom-red", to: "/" },
   { title: "Testimonials", color: "text-custom-red" },
   { title: "Pricing" },
   { title: "Features" },
